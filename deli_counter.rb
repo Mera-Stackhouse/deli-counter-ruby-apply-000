@@ -20,6 +20,12 @@ def take_a_number(array, name)
   puts "Welcome, #{name}. You are number #{position} in line."
 end
 
+def take_a_number_alt(array)
+  count += 1
+  array << count
+  return count
+end  
+
 def now_serving(array)
   if array == []
     puts "There is nobody waiting to be served!"
@@ -29,7 +35,11 @@ def now_serving(array)
   end
 end
 
+def reset_count
+  count = 0
+end  
 
+count = 0
 
 
 
